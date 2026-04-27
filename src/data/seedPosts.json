@@ -1,1 +1,110 @@
-
+[
+  {
+    "id": "a1b2c3d4-e5f6-4789-a012-345678901234",
+    "title": "Getting Started with React Router",
+    "author": "Piyush",
+    "content": "React Router lets you build single-page apps with URL-based navigation. Install react-router-dom, wrap your app in BrowserRouter, and define Routes with path and element props. Nested routes help share layout between pages.",
+    "tags": ["react", "router", "spa"],
+    "createdAt": "2025-06-01T09:00:00.000Z",
+    "updatedAt": "2025-06-01T09:00:00.000Z"
+  },
+  {
+    "id": "b2c3d4e5-f6a7-4890-b123-456789012345",
+    "title": "localStorage Patterns in the Browser",
+    "author": "Anita",
+    "content": "Store JSON with JSON.stringify and parse on read. Use a stable key namespace. Remember storage events only fire across tabs, not same-tab updates—sync React state after writes.",
+    "tags": ["browser", "storage"],
+    "createdAt": "2025-06-05T14:30:00.000Z",
+    "updatedAt": "2025-06-05T14:30:00.000Z"
+  },
+  {
+    "id": "c3d4e5f6-a7b8-4901-c234-567890123456",
+    "title": "Form Validation Without a Library",
+    "author": "Piyush",
+    "content": "Pure functions that return field errors keep validation testable. Run on submit and optionally on blur. Inline messages improve accessibility when paired with aria-invalid and aria-describedby.",
+    "tags": ["forms", "validation", "a11y"],
+    "createdAt": "2025-06-10T11:15:00.000Z",
+    "updatedAt": "2025-06-12T08:45:00.000Z"
+  },
+  {
+    "id": "d4e5f6a7-b8c9-4012-d345-678901234567",
+    "title": "Tailwind Utility-First Workflow",
+    "author": "Marcus",
+    "content": "Compose layouts with flex and grid utilities. Use focus-visible rings for keyboard users. Extract repeated patterns into components rather than copying long class strings everywhere.",
+    "tags": ["tailwind", "css", "ui"],
+    "createdAt": "2025-06-15T16:00:00.000Z",
+    "updatedAt": "2025-06-15T16:00:00.000Z"
+  },
+  {
+    "id": "e5f6a7b8-c9d0-4123-e456-789012345678",
+    "title": "Pagination State in Client Apps",
+    "author": "Anita",
+    "content": "Keep page index in component state when data is client-only. Slice the filtered array for the current page. Reset to page one when filters change so users never see empty pages accidentally.",
+    "tags": ["ui", "pagination"],
+    "createdAt": "2025-06-18T10:20:00.000Z",
+    "updatedAt": "2025-06-18T10:20:00.000Z"
+  },
+  {
+    "id": "f6a7b8c9-d0e1-4234-f567-890123456789",
+    "title": "Semantic HTML for Blog Posts",
+    "author": "Sam",
+    "content": "Use article for post bodies, time with datetime for timestamps, and heading levels that reflect outline order. Chips for tags can be ul lists with list-style-none for screen readers.",
+    "tags": ["html", "a11y"],
+    "createdAt": "2025-06-22T13:45:00.000Z",
+    "updatedAt": "2025-06-22T13:45:00.000Z"
+  },
+  {
+    "id": "a7b8c9d0-e1f2-4345-a678-901234567890",
+    "title": "Why Vite for New React Projects",
+    "author": "Marcus",
+    "content": "Vite uses esbuild for dev transforms and Rollup for production bundles. Cold start and HMR stay fast as the project grows compared to bundler-dev-server approaches on large apps.",
+    "tags": ["vite", "react", "tooling"],
+    "createdAt": "2025-07-01T09:00:00.000Z",
+    "updatedAt": "2025-07-01T09:00:00.000Z"
+  },
+  {
+    "id": "b8c9d0e1-f2a3-4456-b789-012345678901",
+    "title": "Managing CRUD UX Copy",
+    "author": "Piyush",
+    "content": "Confirm destructive actions. After create, navigate to detail or list with a clear success path. Empty states should explain how to add the first record and remain friendly when filters match nothing.",
+    "tags": ["ux", "crud"],
+    "createdAt": "2025-07-03T15:10:00.000Z",
+    "updatedAt": "2025-07-04T09:30:00.000Z"
+  },
+  {
+    "id": "c9d0e1f2-a3b4-4567-c890-123456789012",
+    "title": "Comma-Separated Tags in Forms",
+    "author": "Anita",
+    "content": "Split on commas, trim whitespace, filter empty strings, and optionally lowercase for consistency. Display tags as chips on read with map. Store as array in your domain model.",
+    "tags": ["forms", "data"],
+    "createdAt": "2025-07-05T12:00:00.000Z",
+    "updatedAt": "2025-07-05T12:00:00.000Z"
+  },
+  {
+    "id": "d0e1f2a3-b4c5-4678-d901-234567890123",
+    "title": "Context API for Shared Client State",
+    "author": "Sam",
+    "content": "Provider at the root holds posts and mutators. Custom hooks encapsulate useContext and throw if used outside provider. Avoid putting every UI concern in context—keep it data-shaped.",
+    "tags": ["react", "context"],
+    "createdAt": "2025-07-08T08:30:00.000Z",
+    "updatedAt": "2025-07-08T08:30:00.000Z"
+  },
+  {
+    "id": "e1f2a3b4-c5d6-4789-e012-345678901234",
+    "title": "ISO 8601 Timestamps in UIs",
+    "author": "Marcus",
+    "content": "Store UTC ISO strings. Format with Intl.DateTimeFormat or toLocaleString for locale-aware display. Show both created and updated when they differ so editors see recent changes.",
+    "tags": ["dates", "i18n"],
+    "createdAt": "2025-07-10T17:45:00.000Z",
+    "updatedAt": "2025-07-11T10:00:00.000Z"
+  },
+  {
+    "id": "f2a3b4c5-d6e7-4890-f123-456789012345",
+    "title": "Mini Admin Panels as Learning Projects",
+    "author": "Piyush",
+    "content": "Combine routing, forms, validation, and persistence without a server. Seed realistic data so search and filters feel meaningful. Stretch goals like mock REST teach fetch and async patterns next.",
+    "tags": ["learning", "react"],
+    "createdAt": "2025-07-15T11:11:00.000Z",
+    "updatedAt": "2025-07-15T11:11:00.000Z"
+  }
+]
