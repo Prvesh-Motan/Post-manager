@@ -7,7 +7,13 @@ import './index.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter
+      basename={
+        import.meta.env.BASE_URL === '/'
+          ? undefined
+          : import.meta.env.BASE_URL.replace(/\/$/, '')
+      }
+    >
       <PostsProvider>
         <App />
       </PostsProvider>
